@@ -32,7 +32,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "npm run build-lib && npm run build-types",
+    "build": "pnpm run build-lib && pnpm run build-types && pnpm build-playground",
     "build-lib": "vite build",
     "build-types": "vue-tsc --emitDeclarationOnly --declaration -p tsconfig.app.json",
     "build-playground": "vite build -c vite.config.playground"
