@@ -5,7 +5,8 @@ import { fileURLToPath } from 'url'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
+  base: '/vue3-pickr/',
   build:{
-    outDir: 'docs'
+    outDir: 'docs',
   }
 })
