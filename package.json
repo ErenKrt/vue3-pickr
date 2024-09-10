@@ -1,0 +1,58 @@
+{
+  "name": "@erenkrt/vue3-pickr",
+  "author": {
+    "name": "Eren Kurt",
+    "email": "kurteren07@gmail.com",
+    "url": "https://erencan.dev"
+  },
+  "keywords": [
+    "vue",
+    "vue-pickr",
+    "vue-color-picker"
+  ],
+  "description": "Vue Component of Pickr",
+  "private": false,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./*": "./*"
+  },
+  "typings": "dist/types/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run build-lib && npm run build-types",
+    "build-lib": "vite build",
+    "build-types": "vue-tsc --emitDeclarationOnly --declaration -p tsconfig.app.json"
+  },
+  "dependencies": {
+    "@simonwep/pickr": "^1.9.1",
+    "vue": "^3.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "@vitejs/plugin-vue": "^5.1.3",
+    "@vue/tsconfig": "^0.5.1",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.3",
+    "vue-tsc": "^2.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ErenKrt/vue3-picker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ErenKrt/vue3-picker/issues"
+  }
+}
